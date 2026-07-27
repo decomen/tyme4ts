@@ -1,0 +1,12 @@
+{
+  "packageName": "@taiwei/tyme4ts-almanac",
+  "packageVersion": "2026.07.25",
+  "schemaVersion": "1.0.0",
+  "engineVersion": "tyme4ts@1.5.2",
+  "rulePackage": "packages/2026.07.25.json",
+  "sourcePackage": "sources/2026.07.25.json",
+  "goldenCases": "golden/tyme4ts-1.5.2.json",
+  "allowedDifferences": "allowed-differences.json",
+  "reviewChecklist": "review-checklist.md",
+  "status": "validated-release-candidate"
+}

@@ -2,6 +2,7 @@
   "name": "tyme4ts",
   "version": "1.5.2",
   "description": "Tyme是一个非常强大的日历工具库，可以看作 Lunar 的升级版，拥有更优的设计和扩展性，支持公历、农历、藏历、回历、星座、干支、生肖、节气、月相、法定假日等。",
+  "private": false,
   "main": "./dist/lib/index.cjs",
   "module": "./dist/lib/index.mjs",
   "types": "./dist/lib/index.d.ts",
@@ -12,10 +13,17 @@
       "import": "./dist/lib/index.mjs"
     }
   },
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
     "lint": "eslint",
     "build": "unbuild",
-    "test": "mocha -r ts-node/register --config=.mocharc.json",
+    "test": "npm run test:official && npm run test:almanac",
+    "test:official": "mocha -r ts-node/register --config=.mocharc.json",
+    "test:almanac": "pnpm --filter @taiwei/tyme4ts-almanac test",
+    "check:almanac": "pnpm --filter @taiwei/tyme4ts-almanac check",
+    "build:almanac": "pnpm --filter @taiwei/tyme4ts-almanac build",
     "release": "npm run test && npm publish",
     "js": "unbuild && node build-js.js"
   },

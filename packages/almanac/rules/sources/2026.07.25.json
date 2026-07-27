@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "1.0.0",
+  "packageVersion": "2026.07.25",
+  "sources": [
+    {
+      "sourceId": "model-knowledge.codex",
+      "kind": "model-knowledge",
+      "model": "gpt-5",
+      "knowledgeVersion": "2026-07-25",
+      "confidence": 0.86,
+      "reviewStatus": "approved",
+      "reviewers": ["codex-self-review"],
+      "changeReason": "建立首个公共通书模型知识版本，不依赖典籍定位"
+    }
+  ]
+}

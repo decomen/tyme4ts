@@ -1,0 +1,5 @@
+# 太微 monorepo workspace 配置
+# 根包 tyme4ts（官方 fork）+ 扩展子包 @taiwei/tyme4ts-almanac
+# pnpm 通过此文件识别 workspace；package.json 的 workspaces 字段保留以兼容 npm
+packages:
+  - 'packages/*'
