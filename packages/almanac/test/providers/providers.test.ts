@@ -22,12 +22,15 @@ describe('公共历注 Providers', () => {
     expect(annotation?.details.system).toBe('日本六曜')
   })
 
-  it('金符经在未校勘时仅输出实验状态和缺失证据', () => {
+  it('金符经输出当日值星且保持实验状态（待终审）', () => {
     const facts = new Tyme4tsCalendarAdapter().getDay(2024, 6, 26)
     const annotation = createPublicAnnotations(facts).find((item) => item.kind === 'golden-talisman')
 
     expect(annotation?.experimental).toBe(true)
-    expect(annotation?.details.evidence).toBe('pending-review')
+    expect(annotation?.annotationId).toBe('golden-talisman.day')
+    expect(String(annotation?.details.star).length).toBeGreaterThan(0)
+    expect(['吉', '凶']).toContain(annotation?.details.luck)
+    expect(annotation?.provenance?.reviewStatus).toBe('collating')
   })
 
   it('胎神输出占方、内外方和模型知识释义', () => {

@@ -4,6 +4,7 @@ import type { AdaptedDayFacts } from './adapter-tyme4ts.js'
 import type { ActivityConclusion, AlmanacActivityRecord, AlmanacAnnotation, RuleHit } from './domain-models.js'
 import type { LoadedRulePackage } from './rules/registry.js'
 import { ACTIVITIES } from './vocabulary.js'
+import { createGoldenTalismanAnnotation } from './jinfujing/annotation.js'
 
 export interface PublicActivityRecord {
   readonly activityId: string
@@ -149,7 +150,7 @@ export function createPublicAnnotations(facts: AdaptedDayFacts): readonly Almana
     },
     { annotationId: 'duty.day', kind: 'duty', name: facts.duty, details: { ...upstream, system: '建除十二值' } },
     { annotationId: `duty-star.${facts.dutyStar}`, kind: 'duty-star', name: facts.dutyStar, details: { ...upstream, classification: facts.ecliptic } },
-    { annotationId: 'golden-talisman.pending', kind: 'golden-talisman', name: '金符经（待审核）', experimental: true, details: { evidence: 'pending-review', reason: '缺少模型知识黄金案例与审核结论' } },
+    createGoldenTalismanAnnotation(facts),
   ]
   annotations.push(...facts.godDetails.map((god): AlmanacAnnotation => ({
     annotationId: god.id,
