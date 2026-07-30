@@ -1,0 +1,12 @@
+{
+  "schemaVersion": "1.0.0",
+  "packageVersion": "2026.07.30",
+  "sourceId": "classics.jinfujing-dz1267",
+  "kind": "classics",
+  "title": "九天上圣秘传金符经",
+  "edition": "ctext-ctp-ws344744",
+  "urn": "ctp:ws344744",
+  "reviewStatus": "collating",
+  "reviewers": [],
+  "changeReason": "建立金符经典籍来源基准；独立 classics 类型，不进 model-knowledge sources 包，不经 validateSourcePackage 校验"
+}

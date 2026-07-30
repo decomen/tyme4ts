@@ -1,0 +1,110 @@
+{
+  "schemaVersion": "1.0.0",
+  "packageVersion": "2026.07.30",
+  "sourceId": "classics.jinfujing-dz1267",
+  "reviewStatus": "collating",
+  "stars": [
+    {
+      "index": 0,
+      "id": "yaoxing",
+      "name": "妖星",
+      "aliases": [],
+      "luck": "凶",
+      "talisman": "玄武符",
+      "omen": "玄武符入宅，主人口灾凶、遭官失贼、牢狱刑禁、田宅退散，大凶",
+      "locator": "妖星"
+    },
+    {
+      "index": 1,
+      "id": "huoxing",
+      "name": "或星",
+      "aliases": ["惑星"],
+      "luck": "凶",
+      "talisman": "朱雀",
+      "omen": "朱雀入宅，主火盗、被人欺骗、六畜伤死、阴人灾凶，大凶",
+      "locator": "或星"
+    },
+    {
+      "index": 2,
+      "id": "hedao",
+      "name": "禾刀",
+      "aliases": [],
+      "luck": "凶",
+      "talisman": "白虎",
+      "omen": "白虎入宅，主疾病孝服、虎伤刀兵血光，大凶",
+      "locator": "禾刀"
+    },
+    {
+      "index": 3,
+      "id": "shagong",
+      "name": "煞贡",
+      "aliases": [],
+      "luck": "吉",
+      "talisman": "青龙天德符",
+      "omen": "青龙天德符入宅，主禄位高迁、田宅增盈、生贵子、三年大发财谷，大吉",
+      "locator": "煞贡"
+    },
+    {
+      "index": 4,
+      "id": "zhixing",
+      "name": "直星",
+      "aliases": [],
+      "luck": "吉",
+      "talisman": "金匮符",
+      "omen": "金匮符入宅，主大吉庆、招横财；遇金神七煞则反凶",
+      "locator": "直星"
+    },
+    {
+      "index": 5,
+      "id": "bumu",
+      "name": "卜木",
+      "aliases": ["卜水", "卜星"],
+      "luck": "凶",
+      "talisman": "黑道符",
+      "omen": "黑道符入宅，主风声刑祸、水火官灾、子孙相克，凶",
+      "locator": "卜木"
+    },
+    {
+      "index": 6,
+      "id": "jiaosi",
+      "name": "角巳",
+      "aliases": ["角己", "角已"],
+      "luck": "凶",
+      "talisman": "太阴",
+      "omen": "太阴入宅，主腹痛蛇伤、盗贼水火、物业退散，不吉",
+      "locator": "角巳"
+    },
+    {
+      "index": 7,
+      "id": "renzhuan",
+      "name": "人专",
+      "aliases": [],
+      "luck": "吉",
+      "talisman": "六阴金堂符",
+      "omen": "六阴金堂符入宅，主生贵子、禄位重重、大发财谷，吉",
+      "locator": "人专"
+    },
+    {
+      "index": 8,
+      "id": "lizao",
+      "name": "立早",
+      "aliases": [],
+      "luck": "凶",
+      "talisman": "勾陈符",
+      "omen": "勾陈符入宅，主人口退散、百事不利、刀斧血光，不吉",
+      "locator": "立早"
+    }
+  ],
+  "seasonStart": {
+    "meng": 0,
+    "zhong": 1,
+    "ji": 2
+  },
+  "aliases": {
+    "惑星": "或星",
+    "卜水": "卜木",
+    "卜星": "卜木",
+    "角己": "角巳",
+    "角已": "角巳"
+  }
+}
