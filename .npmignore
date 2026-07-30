@@ -6,7 +6,7 @@ dist/js/
 dist/build.config.d.ts
 dist/build.config.js
 node_modules/
-lib/
+/lib/
 test/
 .gitignore
 .mocharc.json
