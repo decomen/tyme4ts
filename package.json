@@ -11,6 +11,10 @@
       "types": "./dist/lib/index.d.ts",
       "require": "./dist/lib/index.cjs",
       "import": "./dist/lib/index.mjs"
+    },
+    "./almanac": {
+      "types": "./packages/almanac/dist/index.d.ts",
+      "import": "./packages/almanac/dist/index.js"
     }
   },
   "workspaces": [
