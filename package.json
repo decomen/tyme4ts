@@ -17,9 +17,6 @@
       "import": "./packages/almanac/dist/index.js"
     }
   },
-  "workspaces": [
-    "packages/*"
-  ],
   "scripts": {
     "lint": "eslint",
     "build": "unbuild",
