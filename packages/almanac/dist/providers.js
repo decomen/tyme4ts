@@ -1,4 +1,4 @@
-import { createHash } from 'node:crypto';
+import { stableHash } from './stable-hash.js';
 import { ACTIVITIES } from './vocabulary.js';
 import { createGoldenTalismanAnnotation } from './jinfujing/annotation.js';
 /**
@@ -7,7 +7,7 @@ import { createGoldenTalismanAnnotation } from './jinfujing/annotation.js';
  * @returns 带官方命名空间的稳定短哈希 ID。
  */
 function officialActivityId(name) {
-    const digest = createHash('sha256').update(name).digest('hex').slice(0, 12);
+    const digest = stableHash(name).slice(0, 12);
     return `official.${digest}`;
 }
 /**

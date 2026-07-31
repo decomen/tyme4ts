@@ -15,3 +15,4 @@ export * from './jinfujing/text-index.js';
 export * from './jinfujing/annotation.js';
 export * from './omens/data.js';
 export * from './omens/omen-engine.js';
+export * from './default-rule-package.js';

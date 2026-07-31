@@ -1,4 +1,4 @@
-import { createHash } from 'node:crypto'
+import { stableHash } from './stable-hash.js'
 
 export interface SnapshotIdentity {
   readonly snapshotId: string
@@ -25,7 +25,7 @@ function canonicalize(value: unknown): unknown {
  * @returns 64 位小写十六进制摘要。
  */
 function hash(value: unknown): string {
-  return createHash('sha256').update(JSON.stringify(canonicalize(value))).digest('hex')
+  return stableHash(JSON.stringify(canonicalize(value)))
 }
 
 /**

@@ -1,4 +1,4 @@
-import { createHash } from 'node:crypto'
+import { stableHash } from './stable-hash.js'
 
 import type { AdaptedDayFacts } from './adapter-tyme4ts.js'
 import type { ActivityConclusion, AlmanacActivityRecord, AlmanacAnnotation, RuleHit } from './domain-models.js'
@@ -21,7 +21,7 @@ export interface PublicActivityRecord {
  * @returns 带官方命名空间的稳定短哈希 ID。
  */
 function officialActivityId(name: string): string {
-  const digest = createHash('sha256').update(name).digest('hex').slice(0, 12)
+  const digest = stableHash(name).slice(0, 12)
   return `official.${digest}`
 }
 

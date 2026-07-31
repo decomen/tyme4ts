@@ -1,4 +1,4 @@
-import { createHash } from 'node:crypto';
+import { stableHash } from './stable-hash.js';
 /**
  * 将未知 JSON 兼容数据转换为键顺序稳定的表示。
  * @param value - 待参与哈希的结构化输入。
@@ -18,7 +18,7 @@ function canonicalize(value) {
  * @returns 64 位小写十六进制摘要。
  */
 function hash(value) {
-    return createHash('sha256').update(JSON.stringify(canonicalize(value))).digest('hex');
+    return stableHash(JSON.stringify(canonicalize(value)));
 }
 /**
  * 为相同语义输入生成稳定的快照 ID、规则集哈希和结果指纹。
