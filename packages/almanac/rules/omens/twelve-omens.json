@@ -1,0 +1,238 @@
+{
+  "schemaVersion": "1.0.0",
+  "packageVersion": "2026.07.31",
+  "sourceId": "classics.yuxiaji-zazhanpian",
+  "sourceName": "《玉匣记》杂占篇",
+  "reviewStatus": "collating",
+  "note": "眼跳/耳鸣分左/右；其余单条。面热法酉时 douban 整理版缺失，暂占位待 wikisource《玉匣记》原文校对补全。",
+  "omens": [
+    {
+      "omenId": "eyelid",
+      "cnName": "眼跳",
+      "hasLeftRight": true,
+      "hours": [
+        { "index": 0, "left": "左有贵人", "right": "右有酒食" },
+        { "index": 1, "left": "左有忧疑", "right": "右有人悲" },
+        { "index": 2, "left": "左远人来", "right": "右喜庆事" },
+        { "index": 3, "left": "左贵人来", "right": "右平和吉" },
+        { "index": 4, "left": "左客人来", "right": "右损害事" },
+        { "index": 5, "left": "左主酒食", "right": "右主凶事" },
+        { "index": 6, "left": "左主饮食", "right": "右主凶事" },
+        { "index": 7, "left": "左主吉昌", "right": "右主小喜" },
+        { "index": 8, "left": "左有财利", "right": "右有女思" },
+        { "index": 9, "left": "左有客至", "right": "右主亲来" },
+        { "index": 10, "left": "左主酒食", "right": "右主聚财" },
+        { "index": 11, "left": "左主有客", "right": "右主官事" }
+      ]
+    },
+    {
+      "omenId": "earRinging",
+      "cnName": "耳鸣",
+      "hasLeftRight": true,
+      "hours": [
+        { "index": 0, "left": "左主友思", "right": "右主失财" },
+        { "index": 1, "left": "左主口舌", "right": "右主争讼" },
+        { "index": 2, "left": "左主失财", "right": "右主心急" },
+        { "index": 3, "left": "左主坎坷", "right": "右主客至" },
+        { "index": 4, "left": "左主远行", "right": "右主客至" },
+        { "index": 5, "left": "左主凶事", "right": "右主大吉" },
+        { "index": 6, "left": "左主远信", "right": "右主亲来" },
+        { "index": 7, "left": "左主饮食", "right": "右主人来" },
+        { "index": 8, "left": "左主行人", "right": "右主大吉" },
+        { "index": 9, "left": "左主失财", "right": "右主大吉" },
+        { "index": 10, "left": "左主酒食", "right": "右主客至" },
+        { "index": 11, "left": "左主大吉", "right": "右主酒食" }
+      ]
+    },
+    {
+      "omenId": "earHot",
+      "cnName": "耳热",
+      "hasLeftRight": false,
+      "hours": [
+        { "index": 0, "text": "主有僧道来相议事" },
+        { "index": 1, "text": "主有喜事临身，大吉" },
+        { "index": 2, "text": "主有酒食相会，大吉" },
+        { "index": 3, "text": "主人远人来相见，吉" },
+        { "index": 4, "text": "主有财，吉；人通达，吉" },
+        { "index": 5, "text": "主失财物之事，不利" },
+        { "index": 6, "text": "主有喜气事来，大吉" },
+        { "index": 7, "text": "主有客至相求之事" },
+        { "index": 8, "text": "主有酒食宴乐事，吉" },
+        { "index": 9, "text": "主有女子至、婚姻事" },
+        { "index": 10, "text": "主有争讼口舌之事" },
+        { "index": 11, "text": "主有口舌词之事" }
+      ]
+    },
+    {
+      "omenId": "faceHot",
+      "cnName": "面热",
+      "hasLeftRight": false,
+      "hours": [
+        { "index": 0, "text": "主喜庆事，又主得财" },
+        { "index": 1, "text": "主有烦恼、忧愁之事" },
+        { "index": 2, "text": "主有客来聚会，大吉" },
+        { "index": 3, "text": "主有酒食及外人至" },
+        { "index": 4, "text": "主有远客喜相逢，吉" },
+        { "index": 5, "text": "主有急事人来相见" },
+        { "index": 6, "text": "主亲来见，命同坐" },
+        { "index": 7, "text": "主有词讼口舌是非" },
+        { "index": 8, "text": "主有高人来会相见" },
+        { "index": 9, "text": "主有酒食、相聚事（占位待校对）" },
+        { "index": 10, "text": "主有酒食不叫自来" },
+        { "index": 11, "text": "主官词讼及不宁事" }
+      ]
+    },
+    {
+      "omenId": "fleshTwitch",
+      "cnName": "肉颤",
+      "hasLeftRight": false,
+      "hours": [
+        { "index": 0, "text": "主有尊长人来，大吉" },
+        { "index": 1, "text": "主有吉祥临身，大吉" },
+        { "index": 2, "text": "主有凶事，化凶为吉" },
+        { "index": 3, "text": "主有得财事，大吉利" },
+        { "index": 4, "text": "主有凶恶临身，大凶" },
+        { "index": 5, "text": "主宾友相见，大吉利" },
+        { "index": 6, "text": "主有忧疑事，自身吉" },
+        { "index": 7, "text": "主有喜事，占身大吉" },
+        { "index": 8, "text": "主有口舌，解之则吉" },
+        { "index": 9, "text": "主因财起祸事，大凶" },
+        { "index": 10, "text": "主有行人远来，大吉" },
+        { "index": 11, "text": "主有大吉利、喜之事" }
+      ]
+    },
+    {
+      "omenId": "heartFear",
+      "cnName": "心惊",
+      "hasLeftRight": false,
+      "hours": [
+        { "index": 0, "text": "主有女子思，喜事至" },
+        { "index": 1, "text": "主有恶事临门则凶" },
+        { "index": 2, "text": "主有客来、饮食，大吉" },
+        { "index": 3, "text": "主有酒食命，外人来" },
+        { "index": 4, "text": "主成名喜事，大吉利" },
+        { "index": 5, "text": "主妇人思多喜事至" },
+        { "index": 6, "text": "主有酒食自来，大吉" },
+        { "index": 7, "text": "主有妇人思念，大吉" },
+        { "index": 8, "text": "主有大喜之事至，吉" },
+        { "index": 9, "text": "主有喜信至，大吉庆" },
+        { "index": 10, "text": "主有贵人即至，大吉" },
+        { "index": 11, "text": "主有恶人，占身大凶" }
+      ]
+    },
+    {
+      "omenId": "sneeze",
+      "cnName": "嚏喷",
+      "hasLeftRight": false,
+      "hours": [
+        { "index": 0, "text": "主逢吉人，酒食相会" },
+        { "index": 1, "text": "女人默息，客人求事" },
+        { "index": 2, "text": "主女人相遇，有酒食" },
+        { "index": 3, "text": "主财、喜，有客来，同事" },
+        { "index": 4, "text": "主人有酒食，大吉利" },
+        { "index": 5, "text": "主有吉人来求财，喜" },
+        { "index": 6, "text": "主有客旅、酒会、宴饮" },
+        { "index": 7, "text": "主酒食相会合之事" },
+        { "index": 8, "text": "夜梦惊恐，酒食不利" },
+        { "index": 9, "text": "主妇人来求请问事" },
+        { "index": 10, "text": "主妇人思会和合事" },
+        { "index": 11, "text": "主有虚惊，反得吉利" }
+      ]
+    },
+    {
+      "omenId": "clothCatch",
+      "cnName": "衣留",
+      "hasLeftRight": false,
+      "hours": [
+        { "index": 0, "text": "男主酒食，女主亲事" },
+        { "index": 1, "text": "主有愁思破财之事" },
+        { "index": 2, "text": "望夫进财昌，大吉利" },
+        { "index": 3, "text": "主酒食、交友、同会，吉" },
+        { "index": 4, "text": "主息失财、忧灾、疾病" },
+        { "index": 5, "text": "女人外心，男无凶事" },
+        { "index": 6, "text": "主远人至、得利，大吉" },
+        { "index": 7, "text": "血光之灾，化凶为吉" },
+        { "index": 8, "text": "主得外财，出入大吉" },
+        { "index": 9, "text": "主有客至、破财，大吉" },
+        { "index": 10, "text": "主词讼、得财，大吉" },
+        { "index": 11, "text": "主有喜事、得财，大吉" }
+      ]
+    },
+    {
+      "omenId": "potRing",
+      "cnName": "釜鸣",
+      "hasLeftRight": false,
+      "hours": [
+        { "index": 0, "text": "主六畜好安，大吉利" },
+        { "index": 1, "text": "主家宅定、富贵，大吉" },
+        { "index": 2, "text": "主家宅凶、怪事，大凶" },
+        { "index": 3, "text": "主家门祸事至，大凶" },
+        { "index": 4, "text": "主宜田蚕、有利，大吉" },
+        { "index": 5, "text": "主有福至财来，大吉" },
+        { "index": 6, "text": "主官事消散，大吉昌" },
+        { "index": 7, "text": "主有凶祸之事，不利" },
+        { "index": 8, "text": "主远人来、昌盛，大吉" },
+        { "index": 9, "text": "主远行人来，大吉利" },
+        { "index": 10, "text": "主有小喜、亨通，大吉" },
+        { "index": 11, "text": "主官事有理，大吉昌" }
+      ]
+    },
+    {
+      "omenId": "fireLeap",
+      "cnName": "火逸",
+      "hasLeftRight": false,
+      "hours": [
+        { "index": 0, "text": "妻有外心，烦闷之事" },
+        { "index": 1, "text": "女心向外，大不吉利" },
+        { "index": 2, "text": "得小喜、平安，大吉利" },
+        { "index": 3, "text": "主得财帛、亨通之兆" },
+        { "index": 4, "text": "主忧心、损男小口，灾" },
+        { "index": 5, "text": "主有喜事，酒食相逢" },
+        { "index": 6, "text": "宜相争、见官、火灾事" },
+        { "index": 7, "text": "主得财喜昌盛之兆" },
+        { "index": 8, "text": "主得财帛、会合事，吉" },
+        { "index": 9, "text": "主有凶事、变报之兆" },
+        { "index": 10, "text": "主忧心，见得理之兆" },
+        { "index": 11, "text": "主身疾病，不妨之兆" }
+      ]
+    },
+    {
+      "omenId": "dogBark",
+      "cnName": "犬吠",
+      "hasLeftRight": false,
+      "hours": [
+        { "index": 0, "text": "主有妇人不时争斗" },
+        { "index": 1, "text": "主有忧闷忧心之事" },
+        { "index": 2, "text": "望天、进财、昌，大吉利" },
+        { "index": 3, "text": "望天嚎、必得财，大吉" },
+        { "index": 4, "text": "主喜事至、大亨通，吉" },
+        { "index": 5, "text": "主有亲人想念，信至" },
+        { "index": 6, "text": "主逢酒食宴会，大吉" },
+        { "index": 7, "text": "主有家中内外破财" },
+        { "index": 8, "text": "主家宅有上口之忧" },
+        { "index": 9, "text": "加官进禄，必定得财" },
+        { "index": 10, "text": "主有口舌之事，大凶" },
+        { "index": 11, "text": "主有官非词讼之事" }
+      ]
+    },
+    {
+      "omenId": "magpieCry",
+      "cnName": "鹊噪",
+      "hasLeftRight": false,
+      "hours": [
+        { "index": 0, "text": "主有远亲人至，大吉" },
+        { "index": 1, "text": "主有喜庆之事，大吉" },
+        { "index": 2, "text": "主有词讼之事，小吉" },
+        { "index": 3, "text": "主有酒食财喜，大吉" },
+        { "index": 4, "text": "主有远行人至家，吉" },
+        { "index": 5, "text": "主有喜事降临，大吉" },
+        { "index": 6, "text": "主有疾病、求神安，吉" },
+        { "index": 7, "text": "主有六畜不见之事" },
+        { "index": 8, "text": "主有喜庆事，大吉昌" },
+        { "index": 9, "text": "主有坎坷不临之事" },
+        { "index": 10, "text": "主有财帛亨通，大吉" },
+        { "index": 11, "text": "主有口舌争斗之事" }
+      ]
+    }
+  ]
+}

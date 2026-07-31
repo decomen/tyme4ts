@@ -14,6 +14,7 @@ export interface AdaptedDayFacts {
     readonly solarDate: string;
     readonly lunarDate: string;
     readonly dayCycle: string;
+    readonly dayLu: string;
     readonly solarTerm: string;
     readonly phenology: string;
     readonly phenologyOrder: number;

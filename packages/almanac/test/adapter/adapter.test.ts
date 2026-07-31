@@ -60,4 +60,13 @@ describe('Tyme4tsCalendarAdapter', () => {
     expect(termBoundary.hours.map((hour) => hour.civilHour)).toEqual([0, 1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21])
     expect(termBoundary.hours[0]?.branch).toBe('子')
   })
+
+  it('日禄显示互禄+进禄（互禄=日干禄地支，进禄=日支对应禄干，对齐吉真万年历）', () => {
+    expect(adapter.getDay(2024, 1, 1).dayLu).toBe('寅命互禄 癸命进禄')      // 甲子：禄寅+子→癸
+    expect(adapter.getDay(2021, 11, 13).dayLu).toBe('卯命互禄')             // 乙丑：禄卯+丑无禄干
+    expect(adapter.getDay(2024, 6, 25).dayLu).toBe('申命互禄 庚命进禄')      // 庚申：禄申+申→庚
+    expect(adapter.getDay(2024, 6, 26).dayLu).toBe('酉命互禄 辛命进禄')      // 辛酉：禄酉+酉→辛
+    expect(adapter.getDay(2024, 2, 4).dayLu).toBe('巳命互禄')               // 戊戌：禄巳+戌无禄干
+    expect(adapter.getDay(2023, 3, 22).dayLu).toBe('午命互禄 乙命进禄')      // 己卯：禄午+卯→乙
+  })
 })

@@ -1,4 +1,13 @@
 import { SolarDay } from 'tyme4ts';
+/**
+ * 十干禄固定映射表（典籍《三命通会·论十干禄》：「甲禄寅、乙禄卯、丙戊禄巳、丁己禄午、庚禄申、辛禄酉、壬禄亥、癸禄子」）。
+ * 日干 → 禄神地支；丙戊同禄巳、丁己同禄午（戊寄巳、己寄午）。用于派生 AdaptedDayFacts.dayLu。
+ */
+const DAY_LU_BRANCH = {
+    '甲': '寅', '乙': '卯', '丙': '巳', '戊': '巳',
+    '丁': '午', '己': '午', '庚': '申', '辛': '酉',
+    '壬': '亥', '癸': '子',
+};
 /** 官方 tyme4ts 公共 API 的只读隔离适配器。 */
 export class Tyme4tsCalendarAdapter {
     /**
@@ -16,6 +25,14 @@ export class Tyme4tsCalendarAdapter {
         const phenologyBoundary = phenology.getJulianDay().getSolarTime();
         const twentyEightStar = lunar.getTwentyEightStar();
         const pengZu = lunar.getSixtyCycle().getPengZu();
+        // 日禄（互禄+进禄，对齐吉真万年历）：
+        //   互禄=日干自己的禄地支「X命互禄」；进禄=日支对应哪些天干的禄（日支反查禄干）「Y命进禄」
+        const dayLuCycle = lunar.getSixtyCycle();
+        const dayLuStem = dayLuCycle.getHeavenStem().getName();
+        const dayLuBranch = dayLuCycle.getEarthBranch().getName();
+        const luBranch = DAY_LU_BRANCH[dayLuStem];
+        const advanceStems = Object.keys(DAY_LU_BRANCH).filter((s) => DAY_LU_BRANCH[s] === dayLuBranch);
+        const dayLu = luBranch ? `${luBranch}命互禄${advanceStems.length ? ` ${advanceStems.join('、')}命进禄` : ''}` : '';
         const hours = lunar.getHours().slice(0, 12).map((hour) => {
             const cycle = hour.getSixtyCycle();
             return {
@@ -30,6 +47,7 @@ export class Tyme4tsCalendarAdapter {
             solarDate: `${year.toString().padStart(4, '0')}-${month.toString().padStart(2, '0')}-${day.toString().padStart(2, '0')}`,
             lunarDate: lunar.toString(),
             dayCycle: lunar.getSixtyCycle().getName(),
+            dayLu,
             solarTerm: solar.getTerm().getName(),
             phenology: phenology.getName(),
             phenologyOrder: phenology.getIndex() % 3 + 1,

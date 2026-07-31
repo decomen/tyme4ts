@@ -1,6 +1,6 @@
 import { createHash } from 'node:crypto';
 import { ACTIVITIES } from './vocabulary.js';
-import { createGoldenTalismanAnnotation } from './jinfujing-annotation.js';
+import { createGoldenTalismanAnnotation } from './jinfujing/annotation.js';
 /**
  * 为官方原始事项名称生成稳定且不泄漏显示文本的 ID。
  * @param name - tyme4ts 返回的原始事项名称。
